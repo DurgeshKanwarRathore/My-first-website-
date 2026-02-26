@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 8</title>
+</head>
+<body>
+
+<h2>Riddle 8</h2>
+<p>What comes once in a minute, twice in a moment, but never in a thousand years?</p>
+
+<input type="text" id="answer">
+<button onclick="check()">Submit</button>
+
+<script>
+function check() {
+  let ans = document.getElementById("answer").value.toLowerCase();
+  if (ans === "m") {
+    window.location.href = "riddle9.html";
+  } else {
+    alert("Wrong answer!");
+  }
+}
+</script>
+
+</body>
+</html>
