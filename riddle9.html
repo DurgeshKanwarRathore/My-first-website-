@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Riddle</title>
+</head>
+<body>
+
+<h2>Final Riddle</h2>
+<p>What has to be broken before you can use it?</p>
+
+<input type="text" id="answer">
+<button onclick="check()">Submit</button>
+
+<script>
+function check() {
+  let ans = document.getElementById("answer").value.toLowerCase();
+  if (ans === "egg") {
+    alert("🎉 Congratulations! You completed the riddle game!");
+    window.location.href = "index.html";
+  } else {
+    alert("Wrong answer! Try again.");
+  }
+}
+</script>
+
+</body>
+</html>
